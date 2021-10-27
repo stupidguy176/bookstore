@@ -1,0 +1,196 @@
+/* CSS Document */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #CCC;
+}
+
+.banner {
+  height: 100px;
+  background-color: #5c5cee;
+}
+
+.nav {
+  height: 40px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 500px;
+}
+
+.footer {
+  height: 50px;
+  background-color: #7e7ee6;
+  text-align: center;
+  color: #dd5454;
+}
+
+.left {
+  width: 15%;
+  padding: 10px;
+}
+
+.content {
+  width: 70%;
+  background-color: #539469;
+}
+
+.right {
+  width: 15%;
+  background-color: #ebeb5e;
+  padding: 10px;
+}
+
+.content > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.content div div {
+  width: 50%;
+  height: 270px;
+  background-color: #e27272;
+  border: 1px solid #333;
+  margin: 2px;
+}
+
+#menu ul {
+  list-style-type: none;
+  background-color: #57856e;
+  height: 40px;
+}
+
+#menu li {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  position: relative;
+  line-height: 40px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+}
+
+#menu a:hover {
+  background-color: #690;
+}
+
+#menu li #submenu {
+  display: none;
+  position: absolute;
+}
+
+#menu li:hover #submenu {
+  display: block;
+}
+
+/*right*/
+.right div {
+  margin: 5px;
+  width: 90%;
+  height: 250px;
+  border-radius: 20px;
+  border: 1px solid #cf6e6e;
+  text-align: center;
+}
+
+#menuleft {
+  text-align: center;
+  color: #000;
+  list-style-type: circle;
+  margin-left: 30px;
+}
+
+#row4 {
+  overflow: scroll;
+}
+
+/* FILTER TAB*/
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+} */
+/* Center website */
+/* .main {
+  max-width: 1000px;
+  margin: auto;
+} */
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
