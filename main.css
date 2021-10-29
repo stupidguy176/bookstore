@@ -5,9 +5,14 @@
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  background-color: #CCC;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ccc;
 }
 
 .banner {
@@ -21,8 +26,13 @@
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   min-height: 500px;
 }
 
@@ -39,27 +49,29 @@
 }
 
 .content {
-  width: 70%;
+  width: 63%;
   background-color: #539469;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
 }
 
 .right {
-  width: 15%;
+  width: 20%;
   background-color: #ebeb5e;
   padding: 10px;
 }
 
 .content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-}
-
-.content div div {
-  width: 50%;
-  height: 270px;
-  background-color: #e27272;
-  border: 1px solid #333;
-  margin: 2px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #menu ul {
@@ -78,7 +90,7 @@
 
 #menu a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   display: block;
 }
 
@@ -117,20 +129,6 @@
 }
 
 /* FILTER TAB*/
-/* * {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-} */
-/* Center website */
-/* .main {
-  max-width: 1000px;
-  margin: auto;
-} */
 h1 {
   font-size: 50px;
   word-break: break-all;
@@ -147,13 +145,6 @@ h1 {
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none;
-  /* Hide columns by default */
-}
-
 /* Clear floats after rows */
 .row:after {
   content: "";
@@ -192,5 +183,35 @@ h1 {
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */
