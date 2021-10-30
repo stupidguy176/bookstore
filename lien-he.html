@@ -2,148 +2,87 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Untitled Document</title>
+    <title>My Bookstore</title>
     <link rel="stylesheet" href="main.css" />
     <script src="main.js"></script>
   </head>
 
   <body>
     <div class="main">
-      <div class="banner"></div>
+      <div class="banner">
+        <div class="img">
+          <img src="imgs/logo/sci-fi.png" alt="" />
+        </div>
+        <div class="banner-title">
+          <h1>Bởi vì sách là thế giới</h1>
+        </div>
+      </div>
       <div class="nav">
-        <ul id="menu">
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
-          <li><a href="dich-vu.html">Dịch vụ</a></li>
-          <li><a href="lien-he.html">Liên hệ</a></li>
-        </ul>
-      </div>
-      <div class="container">
-        <div class="left">
-          <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')">
-              Tất cả
-            </button>
-            <button class="btn" onclick="filterSelection('nature')">
-              Bán chạy
-            </button>
-            <button class="btn" onclick="filterSelection('cars')">Giảm giá</button>
-            <button class="btn" onclick="filterSelection('people')">
-              Văn học Việt Nam
-            </button>
-            <button class="btn" onclick="filterSelection('people')">
-              Văn học nước ngoài
-            </button>
-            <button class="btn" onclick="filterSelection('people')">
-              Thiếu nhi
-            </button>
-            <button class="btn" onclick="filterSelection('people')">
-              Khoa học và nhân văn
-            </button>
-          </div>
-        </div>
-        <div class="content">
-          <!-- Portfolio Gallery Grid -->
-          <div class="row">
-            <div class="column nature">
-              <div class="content">
-                <img
-                  src="/w3images/mountains.jpg"
-                  alt="Mountains"
-                  style="width: 100%"
-                />
-                <h4>Mountains</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column nature">
-              <div class="content">
-                <img
-                  src="/w3images/lights.jpg"
-                  alt="Lights"
-                  style="width: 100%"
-                />
-                <h4>Lights</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column nature">
-              <div class="content">
-                <img
-                  src="/w3images/nature.jpg"
-                  alt="Nature"
-                  style="width: 100%"
-                />
-                <h4>Forest</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-
-            <div class="column cars">
-              <div class="content">
-                <img src="/w3images/cars1.jpg" alt="Car" style="width: 100%" />
-                <h4>Retro</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column cars">
-              <div class="content">
-                <img src="/w3images/cars2.jpg" alt="Car" style="width: 100%" />
-                <h4>Fast</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column cars">
-              <div class="content">
-                <img src="/w3images/cars3.jpg" alt="Car" style="width: 100%" />
-                <h4>Classic</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-
-            <div class="column people">
-              <div class="content">
-                <img
-                  src="/w3images/people1.jpg"
-                  alt="People"
-                  style="width: 100%"
-                />
-                <h4>Girl</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column people">
-              <div class="content">
-                <img
-                  src="/w3images/people2.jpg"
-                  alt="People"
-                  style="width: 100%"
-                />
-                <h4>Man</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column people">
-              <div class="content">
-                <img
-                  src="/w3images/people3.jpg"
-                  alt="People"
-                  style="width: 100%"
-                />
-                <h4>Woman</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <!-- END GRID -->
-          </div>
-        </div>
-        <div class="right">
-          <div>Vùng quảng cáo 1</div>
-
-          <div>Vùng quảng cáo 2</div>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="dich-vu.html">Dịch vụ</a></li>
+            <li><a href="lien-he.html" class="activemn">Liên hệ</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer">copyright 2018</div>
+      <div class="introduction contact-page">
+        <div class="contact-info">
+          <h2>Trụ sở chính</h2>
+          <p>Địa chỉ: 55 Quang Trung, Hà Nội, Việt Nam</p>
+          <p>Điện thoại: (024) 39434490</p>
+          <p>Fax: (024) 38229085</p>
+          <p>Email: info@nxbkimdong.com.vn</p>
+          <p>Website: www.nxbkimdong.com.vn</p>
+
+          <h2>Chi nhánh TP. Hồ Chí Minh</h2>
+          <p>Địa chỉ: 248 Cống Quỳnh, P. Phạm Ngũ Lão, Q.1</p>
+          <p>Điện thoại: (024) 39434490</p>
+          <p>Fax: (028) 39305867</p>
+          <p>Email: cnkimdong@nxbkimdong.com.vn</p>
+          
+          <h2>Chi nhánh Miền Trung</h2>
+          <p>Địa chỉ: 102 Ông Ích Khiêm, TP Đà Nẵng</p>
+          <p>Điện thoại: (0511) 3812333 – (0511) 3812335</p>
+          <p>Fax: (0511) 3812334</p>
+          <p>Email: cnkimdongmt@nxbkimdong.com.vn</p>
+
+          <br>
+          <p>
+            Mọi ý kiến đóng góp xin vui lòng gửi về hòm thư của chúng tôi. Xin chân thành cảm ơn!
+          </p>
+        </div>
+        <div class="contact-form">
+          <form action="">
+
+            <input type="text" id="fname" name="firstname" placeholder="Tên..">
+        
+            <input type="email" id="email" name="email" placeholder="Địa chỉ mail..">
+
+            <input type="tel" id="phone" name="phone" placeholder="Số điện thoại..">
+        
+            <textarea id="subject" name="subject" placeholder="Nội dung.." style="height:200px"></textarea>
+        
+            <div class="btn-submit">
+              <input type="submit" value="Gửi">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <div class="wrapper">
+            © 2014 - Bản quyền của Công Ty Cổ Phần Văn Hoá và Truyền Thông Nhã
+            Nam - <a href="/" style="color: #fff">nhanam.com.vn</a> <br />
+            Địa chỉ: 59 Đỗ Quang, phường Trung Hoà, quận Cầu Giấy, Hà Nội
+            <br />
+            Giấy ĐKKD số 0101603420 do Sở KH&amp;ĐT TP Hà Nội cấp ngày 21 tháng
+            1 năm 2005 sửa đổi lần 5 ngày 20/3/2013
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

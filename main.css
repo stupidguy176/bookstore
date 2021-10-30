@@ -4,10 +4,137 @@
   padding: 0px;
 }
 
+body {
+  line-height: 1.42857143;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   background-color: #ccc;
+}
+
+.introduction {
+  width: 60%;
+  margin: auto;
+  background: #fff5e7;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.introduction .about-us {
+  padding: 20px;
+}
+
+.introduction .about-us h2 {
+  font-size: 20px;
+  color: #00aeef;
+  padding: 10px 0px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.introduction .about-us .contentus {
+  color: #555;
+}
+
+.introduction .about-us .doingu {
+  margin-top: 20px;
+}
+
+.introduction .about-us .team {
+  display: flex;
+}
+
+.introduction .about-us .team .card {
+  width: 80%;
+  margin: 20px;
+}
+
+.introduction .about-us .team .iinfo {
+  padding: 20px;
+  text-align: left;
+  color: #555;
+}
+
+.introduction .about-us .team .iinfo .name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.introduction .about-us .team .iinfo .role {
+  color: #818181;
+}
+
+.introduction.service {
+  padding: 20px;
+  color: #555;
+}
+
+.introduction.service h2 {
+  font-size: 20px;
+  color: #00aeef;
+  padding: 10px 0px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.introduction.service .ser-item .item-lo {
+  margin-bottom: 10px;
+}
+
+.introduction.contact-page {
+  display: flex;
+  color: #555;
+  padding: 20px;
+}
+
+.introduction.contact-page h2 {
+  font-size: 20px;
+  color: #00aeef;
+  padding: 10px 0px;
+  text-align: left;
+  font-family: monospace;
+}
+
+.introduction.contact-page .contact-info {
+  width: 50%;
+}
+
+.introduction.contact-page .contact-form {
+  width: 40%;
+}
+
+.introduction.contact-page .contact-form input[type=email], .introduction.contact-page .contact-form input[type=tel], .introduction.contact-page .contact-form input[type=text], .introduction.contact-page .contact-form select, .introduction.contact-page .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.introduction.contact-page .contact-form input[type=submit] {
+  background-color: #00aeef;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.introduction.contact-page .contact-form input[type=submit]:hover {
+  background-color: #548abf;
+}
+
+.introduction.contact-page .contact-form .btn-submit {
+  width: 100%;
+  text-align: right;
 }
 
 .banner {
@@ -31,6 +158,10 @@
 .banner .banner-title {
   color: #00A5FF;
   margin-left: 20px;
+}
+
+.activemn {
+  background-color: #0074B2;
 }
 
 .nav {
@@ -166,6 +297,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  -webkit-box-orient: vertical;
 }
 
 .column.vietnam, .column.us, .column.scientist {

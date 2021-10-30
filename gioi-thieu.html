@@ -2,178 +2,88 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Untitled Document</title>
+    <title>My Bookstore</title>
     <link rel="stylesheet" href="main.css" />
     <script src="main.js"></script>
-    <style>
-      * {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-    </style>
   </head>
 
   <body>
-    <!-- MAIN (Center website) -->
     <div class="main">
-      <h1>MYLOGO.COM</h1>
-      <hr />
-
-      <h2>PORTFOLIO</h2>
-
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
-        <button class="btn" onclick="filterSelection('nature')">Nature</button>
-        <button class="btn" onclick="filterSelection('cars')">Cars</button>
-        <button class="btn" onclick="filterSelection('people')">People</button>
+      <div class="banner">
+        <div class="img">
+          <img src="imgs/logo/sci-fi.png" alt="" />
+        </div>
+        <div class="banner-title">
+          <h1>Bởi vì sách là thế giới</h1>
+        </div>
       </div>
-
-      <!-- Portfolio Gallery Grid -->
-      <div class="row">
-        <div class="column nature">
-          <div class="content">
+      <div class="nav">
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi-thieu.html" class="activemn">Giới thiệu</a></li>
+            <li><a href="dich-vu.html">Dịch vụ</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container introduction">
+       <div class="about-us">
+         <h2>ĐÔI LỜI VỀ CHÚNG TÔI</h2>
+         <div class="contentus">
+          Lòng say mê của đội ngũ là viên đá đầu tiên. Trải qua mấy năm phát triển, Nhã Nam đã được xây dựng dần lên trong diện mạo một nhà xuất bản vững chãi và chuyên nghiệp. Sáu tháng sau khi thành lập công ty, Nhật ký Đặng Thùy Trâm ra đời, tạo nên một cơn sốt trong xã hội, với gần 500,000 bản sách được phát hành, phá mọi kỷ lục về xuất bản trước đó, kéo theo một loạt những hiệu ứng xã hội và dư luận có ý nghĩa. Từ đó trở đi, thông qua Nhã Nam, các cuốn sách văn học nước ngoài có giá trị được liên tục mua bản quyền và xuất bản tại Việt Nam, thu hút nhiều tầng lớp độc giả. Sách của Nhã Nam nổi bật bởi nội dung văn học tinh tế, bởi vẻ đẹp của thiết kế hiện đại ở hình thức, bởi sự chăm chút kỹ lưỡng cho mỗi cuốn sách như một con thuyền mang tới niềm vui, tri thức, ngạc nhiên, và đồng cảm.
+         </div>
+         <h2 class="doingu">ĐỘI NGŨ</h2>
+         <div class="team">
+          <div class="card">
             <img
-              src="/w3images/mountains.jpg"
-              alt="Mountains"
+              src="imgs/gioithieu/team2.jpg"
+              alt="Denim Jeans"
               style="width: 100%"
             />
-            <h4>Mountains</h4>
-            <p>Lorem ipsum dolor..</p>
+            <div class="iinfo">
+              <p class="name">Quoc Anh</p>
+              <p class="role">CEO & Founder</p>
+              <p class="bome">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
+              <p>
+                jane@example.com
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="column nature">
-          <div class="content">
-            <img src="/w3images/lights.jpg" alt="Lights" style="width: 100%" />
-            <h4>Lights</h4>
-            <p>Lorem ipsum dolor..</p>
+          <div class="card">
+            <img
+              src="imgs/gioithieu/team1.jpg"
+              alt="Denim Jeans"
+              style="width: 100%"
+            />
+            <div class="iinfo">
+              <p class="name">Anh Thi</p>
+              <p class="role">Designer</p>
+              <p class="bome">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
+              <p>
+                jane@example.com
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="column nature">
-          <div class="content">
-            <img src="/w3images/nature.jpg" alt="Nature" style="width: 100%" />
-            <h4>Forest</h4>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-        </div>
-
-        <div class="column cars">
-          <div class="content">
-            <img src="/w3images/cars1.jpg" alt="Car" style="width: 100%" />
-            <h4>Retro</h4>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-        </div>
-        <div class="column cars">
-          <div class="content">
-            <img src="/w3images/cars2.jpg" alt="Car" style="width: 100%" />
-            <h4>Fast</h4>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-        </div>
-        <div class="column cars">
-          <div class="content">
-            <img src="/w3images/cars3.jpg" alt="Car" style="width: 100%" />
-            <h4>Classic</h4>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-        </div>
-
-        <div class="column people">
-          <div class="content">
-            <img src="/w3images/people1.jpg" alt="Car" style="width: 100%" />
-            <h4>Girl</h4>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-        </div>
-        <div class="column people">
-          <div class="content">
-            <img src="/w3images/people2.jpg" alt="Car" style="width: 100%" />
-            <h4>Man</h4>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-        </div>
-        <div class="column people">
-          <div class="content">
-            <img src="/w3images/people3.jpg" alt="Car" style="width: 100%" />
-            <h4>Woman</h4>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-        </div>
-        <!-- END GRID -->
+         </div>
+       </div>
       </div>
-
-      <!-- END MAIN -->
+      <div class="footer">
+        <div class="copyright">
+          <div class="wrapper">
+            © 2014 - Bản quyền của Công Ty Cổ Phần Văn Hoá và Truyền Thông Nhã
+            Nam - <a href="/" style="color: #fff">nhanam.com.vn</a> <br />
+            Địa chỉ: 59 Đỗ Quang, phường Trung Hoà, quận Cầu Giấy, Hà Nội
+            <br />
+            Giấy ĐKKD số 0101603420 do Sở KH&amp;ĐT TP Hà Nội cấp ngày 21 tháng
+            1 năm 2005 sửa đổi lần 5 ngày 20/3/2013
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
