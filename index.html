@@ -2,14 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Untitled Document</title>
+    <title>My Bookstore</title>
     <link rel="stylesheet" href="main.css" />
     <script src="main.js"></script>
   </head>
 
   <body>
     <div class="main">
-      <div class="banner"></div>
+      <div class="banner">
+        <div class="img">
+          <img src="imgs/logo/sci-fi.png" alt="" />
+        </div>
+        <div class="banner-title">
+          <h1>Bởi vì sách là thế giới</h1>
+        </div>
+      </div>
       <div class="nav">
         <ul id="menu">
           <ul id="menu">
@@ -26,122 +33,466 @@
             <button class="btn active" onclick="filterSelection('all')">
               Tất cả
             </button>
-            <button class="btn" onclick="filterSelection('nature')">
+            <button class="btn" onclick="filterSelection('sale')">
               Bán chạy
             </button>
-            <button class="btn" onclick="filterSelection('cars')">
-              Giảm giá
-            </button>
-            <button class="btn" onclick="filterSelection('people')">
+            <button class="btn" onclick="filterSelection('vietnam')">
               Văn học Việt Nam
             </button>
-            <button class="btn" onclick="filterSelection('people')">
+            <button class="btn" onclick="filterSelection('us')">
               Văn học nước ngoài
             </button>
-            <button class="btn" onclick="filterSelection('people')">
+            <button class="btn" onclick="filterSelection('child')">
               Thiếu nhi
             </button>
-            <button class="btn" onclick="filterSelection('people')">
+            <button class="btn" onclick="filterSelection('scientist')">
               Khoa học và nhân văn
             </button>
           </div>
         </div>
         <div class="content">
-          <!-- Portfolio Gallery Grid -->
-          <!-- <div class="row"> -->
-            <div class="column nature">
+          <div class="row">
+            <!--sale-->
+            <div class="column sale">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/sale/1.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">VƯƠNG QUỐC MUÔN LOÀI</a></p>
+                <p class="price">27.800đ</p>
+                <p class="column-content">
+                  Cuốn sách tô màu được ưa chuộng nhất và bán chạy nhất tại Anh
+                  quốc !
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
-            <div class="column nature">
+            <div class="column sale">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/sale/2.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">THIÊN ĐƯỜNG NHIỆT ĐỚI</a></p>
+                <p class="price">31.200đ</p>
+                <p class="column-content">
+                  Lớn lên nơi miền quê xứ Wales giữa muôn loài động thực vật, từ
+                  một xưởng vẽ bên bờ biển, Millie Marotta đã sáng tác vô vàn
+                  bức vẽ lấy cảm hứng từ cuộc sống hoang dã diệu kỳ xung quanh
+                  mình.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
-            <div class="column nature">
+            <div class="column sale">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/sale/3.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">MỘT NGÀY ĐẸP TRỜI</a></p>
+                <p class="price">31.200đ</p>
+                <p class="column-content">
+                  Chiếc xe buýt ngập tràn hương hoa, cây dương cầm với những
+                  phím đàn thi nhau nhảy múa,
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column sale">
+              <div class="card">
+                <img
+                  src="imgs/sale/4.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CHÍN THÁNG MƯỜI NGÀY</a></p>
+                <p class="price">31.200đ</p>
+                <p class="column-content">
+                  Tập trung vào những biến đổi phát sinh trên cơ thẻ cũng như
+                  trong tâm lý theo từng giai đoạn mang thai, bằng ngôn từ ấm
+                  áp, cuốn sách đưa ra những gợi ý để giảm thiểu căng thẳng
+                  trong thai kỳ.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
 
-            <div class="column cars">
+            <!--vietnam-->
+            <div class="column vietnam">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/vietnam/1.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">THẢM KỊCH VĨ NHÂN</a></p>
+                <p class="price">93.600đ</p>
+                <p class="column-content">
+                  Gần 600 năm trước, khi cuộc chiến chống ngoại bang kết thúc,
+                  cũng là lúc cuộc chiến phe cánh trong nội bộ triều đình nhà Lê
+                  mở ra.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
-            <div class="column cars">
+            <div class="column vietnam">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/vietnam/2.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">ĐỂ CON ĐƯỢC CHÍCH</a></p>
+                <p class="price">86.400đ</p>
+                <p class="column-content">
+                  Bạn có phân vân trong việc đưa con đi tiêm chủng? Bạn có lo
+                  ngại về thông tin vắc xin MMR (sởi-rubella-quai bị) gây hội
+                  chứng tự kỷ?
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
-            <div class="column cars">
+            <div class="column vietnam">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/vietnam/3.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CHÂN ĐI KHÔNG MỎI</a></p>
+                <p class="price">78.400đ</p>
+                <p class="column-content">
+                  Đinh Hằng của cuốn sách mới này vẫn là Đinh Hằng của Quá trẻ
+                  để chết, vừa mạnh mẽ và tỉnh táo, vừa đam mê và nhạy cảm.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column vietnam">
+              <div class="card">
+                <img
+                  src="imgs/vietnam/4.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">ĐẠI NAM DỊ TRUYỆN</a></p>
+                <p class="price">92.000đ</p>
+                <p class="column-content">
+                  Năm Cảnh Hưng thứ bốn mươi ba, huyện Cốc Dương, trấn Sơn Tây,
+                  đêm rằm tháng Bảy.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
 
-            <div class="column people">
+            <!--us-->
+            <div class="column us">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/us/1.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CẢNH NGỘ</a></p>
+                <p class="price">94.400đ</p>
+                <p class="column-content">
+                  Cùng chia sẻ cảnh ngộ được trại trẻ mồ côi nhận nuôi từ khi
+                  vừa lọt lòng mẹ
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
-            <div class="column people">
+            <div class="column us">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/us/2.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">TRÁI TIM CỦA BRUTUS</a></p>
+                <p class="price">110.400đ</p>
+                <p class="column-content">
+                  Trái tim của Brutus được nhà xuất bản Kobunsha xuất bản lần
+                  đầu năm 1989, và năm 2011 được chuyển thể thành phim truyền
+                  hình do diễn viên Fujiwara Tatsuya thủ vai chính.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
-            <div class="column people">
+            <div class="column us">
               <div class="card">
-                <img src="imgs/1.jpg" alt="Denim Jeans" style="width: 100%" />
-                <h2>Tailored Jeans</h2>
-                <p class="price">$19.99</p>
-                <p>Some text about the jeans..</p>
-                <p><button>Add to Cart</button></p>
+                <img
+                  src="imgs/us/3.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">GIÃ TỪ VŨ KHÍ</a></p>
+                <p class="price">119.200đ</p>
+                <p class="column-content">
+                  Cuốn sách best seller đầu tiên của Ernest Hemingway
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
               </div>
             </div>
-            <!-- END GRID -->
-          <!-- </div> -->
+            <div class="column us">
+              <div class="card">
+                <img
+                  src="imgs/us/4.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">BÚT KÝ NGƯỜI ĐI SĂN</a></p>
+                <p class="price">127.200đ</p>
+                <p class="column-content">
+                  Bút ký người đi săn là tác phẩm kinh điển của Turgenev, gồm 25
+                  truyện ngắn đẹp tuyệt vời, khiến tâm trí bạn bị xâm chiếm trọn
+                  vẹn bởi vẻ diễm lệ bí ẩn của thiên nhiên Nga
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+
+            <!--child-->
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/1.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CUỐN SÁCH LỚN RỰC RỠ VỀ XE CỘ</a></p>
+                <p class="price">55.200đ</p>
+                <p class="column-content">
+                  Phương tiện đi lại thật cuốn hút chúng mình. Trong cuốn sách
+                  này, bạn sẽ tìm thấy tất cả những xe cộ xunh quanh: những
+                  "công nhân" mạnh mẽ như máy kéo và xe chở rác, những "hiệp sĩ"
+                  nhanh nhẹn như xe cứu hỏa và xe cảnh sát, và cả những phương
+                  tiện đi lại hằng ngày như xe con và xe gắn máy. Brừm!
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/2.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CUỐN SÁCH LỚN RỰC RỠ VỀ KỸ NĂNG</a></p>
+                <p class="price">56.000đ</p>
+                <p class="column-content">
+                  Có rất nhiều việc nho nhỏ lặp đi lặp lại mỗi ngày: thức dậy,
+                  ăn sáng, đi toilet, đánh răng, mặc quần áo đi học, thay quần
+                  áo vào buổi tối, tắm, đi ngủ... Thật chán ngán phải không?
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/3.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CUỐN SÁCH LỚN RỰC RỠ VỀ LOÀI VẬT</a></p>
+                <p class="price">46.000đ</p>
+                <p class="column-content">
+                  Loài vật là những người bạn thân thiết của chúng mình. Thế
+                  giới muôn loài vô cùng phong phú; có vật nuôi trong nhà hoặc
+                  thú hoang trong rừng, có loài sống dưới nước và loài khác ở
+                  trên cây;
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/4.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CUỐN SÁCH LỚN RỰC RỠ VỀ GIÁC QUAN</a></p>
+                <p class="price">40.000đ</p>
+                <p class="column-content">
+                  Nhờ năm giác quan thị giác, thính giác, khứu giác, vị giác và
+                  xúc giác mà chúng mình cảm nhận được mọi thứ đang diễn ra xung
+                  quanh. Nghe khó hiểu quá nhỉ?
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/5.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">TÌNH YÊU CỦA MẸ</a></p>
+                <p class="price">41.600đ</p>
+                <p class="column-content">
+                  “Mẹ à, mẹ có yêu con suốt cả cuộc đời?”
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/6.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CÁC LOÀI QUÝ HIẾM VÙNG TRƯỜNG SƠN</a></p>
+                <p class="price">52.800đ</p>
+                <p class="column-content">
+                  Ai trong chúng ta có thể nói mình biết về Trường Sơn, một kho
+                  tàng thiên nhiên của đất nước?
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/8.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">CHÚ LÍNH CHÌ DŨNG CẢM</a></p>
+                <p class="price">39.800đ</p>
+                <p class="column-content">
+                  Chú lính chì đồ chơi bị cụt mất một chân liên tiếp gặp những
+                  cuộc phiêu lưu gian khó, chú rơi xuống cửa sổ, chui vào cống
+                  ngầm, bị nuốt vào bụng cá
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column child">
+              <div class="card">
+                <img
+                  src="imgs/top/7.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">TRƯỜNG HỌC CỦA LÉON</a></p>
+                <p class="price">41.600đ</p>
+                <p class="column-content">
+                  Cuốn sách gối đầu giường về cuộc-phiêu-lưu-vĩ-đại đầu đời của
+                  mỗi em bé: bắt đầu đến trường. Tất tần tật những sự kiện lớn
+                  nhỏ ở trường: chơi tập thể, ăn, ngủ, thể thao, hát, nghe
+                  chuyện, hò hét, cãi lộn
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+
+            <!--scientis-->
+            <div class="column scientist">
+              <div class="card">
+                <img
+                  src="imgs/scientist/1.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">LỢI THẾ ĐEN</a></p>
+                <p class="price">127.200đ</p>
+                <p class="column-content">
+                  Trong thập niên đầu tiên của thế kỷ 21, các quỹ phòng hộ lặng
+                  lẽ xâm nhập thị trường tài chính và thay đổi sâu sắc cách thức
+                  kiếm lời của phố Wall.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column scientist">
+              <div class="card">
+                <img
+                  src="imgs/scientist/2.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">DÁM HẠNH PHÚC</a></p>
+                <p class="price">88.000đ</p>
+                <p class="column-content">
+                  Ai cũng có thể hạnh phúc ngay từ giây phút này.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column scientist">
+              <div class="card">
+                <img
+                  src="imgs/scientist/3.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">NHÀ KHÁM PHÁ</a></p>
+                <p class="price">167.200đ</p>
+                <p class="column-content">
+                  Được coi như cuốn sách lớn nhất của một trong những sử gia lớn
+                  nhất thời hiện đại, Những nhà khám phá là một tập khảo luận đồ
+                  sộ.
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+            <div class="column scientist">
+              <div class="card">
+                <img
+                  src="imgs/scientist/4.jpg"
+                  alt="Denim Jeans"
+                  style="width: 100%"
+                />
+                <p><a href="">TRƯỚC KHI TÔI LÀ CEO</a></p>
+                <p class="price">100.000đ</p>
+                <p class="column-content">
+                  Câu hỏi luôn được đặt ra hiện nay với nhiều người đang trên
+                  đường lập nghiệp là: Làm thế nào để trở thành một CEO?
+                </p>
+                <p><button>Thêm vào giỏ hàng</button></p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="right">
-          <div>Vùng quảng cáo 1</div>
-
-          <div>Vùng quảng cáo 2</div>
+          <div class="banners">
+            <div class="banner-item">
+              <img src="imgs/pr/1.webp" alt="" />
+            </div>
+            <div class="banner-item">
+              <img src="imgs/pr/2.webp" alt="" />
+            </div>
+            <div class="banner-item">
+              <img src="imgs/pr/11.jpg" alt="" />
+            </div>
+            <div class="banner-item">
+              <img src="imgs/pr/12.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer">copyright 2018</div>
+      <div class="footer">
+        <div class="copyright">
+          <div class="wrapper">
+            © 2014 - Bản quyền của Công Ty Cổ Phần Văn Hoá và Truyền Thông Nhã
+            Nam - <a href="/" style="color: #fff">nhanam.com.vn</a> <br />
+            Địa chỉ: 59 Đỗ Quang, phường Trung Hoà, quận Cầu Giấy, Hà Nội
+            <br />
+            Giấy ĐKKD số 0101603420 do Sở KH&amp;ĐT TP Hà Nội cấp ngày 21 tháng
+            1 năm 2005 sửa đổi lần 5 ngày 20/3/2013
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
