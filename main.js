@@ -136,7 +136,7 @@ function updateCartTotal(){
           price = parseFloat(x.price.split('đ')[0]);
           productname = x.productname;
           //add price to total
-          carttable += "<tr><td>" + productname + "</td><td>" + price.toFixed(2) + "</td><td>1</td></tr>";
+          carttable += "<tr><td>" + productname + "</td><td class='pprice'>" + price.toFixed(2) + "</td><td>1</td></tr>";
       }
   }
   //insert saved products to cart table
