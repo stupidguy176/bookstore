@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Bookstore</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      table {
+        margin-bottom:1em;
+        border-collapse:collapse;
+      }
+      table td, table th {
+        text-align:left;
+        padding:0.25em 1em;
+        border-bottom:1px solid #E0E4CC;
+      }
+      .notify {
+        visibility: hidden;
+      }
+      button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="banner">
+        <div class="img">
+          <img src="imgs/logo/sci-fi.png" alt="" />
+        </div>
+        <div class="banner-title">
+          <h1>Bởi vì sách là thế giới</h1>
+        </div>
+      </div>
+      <div class="nav">
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="dich-vu.html">Dịch vụ</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="introduction service">
+        <div class="cart-container">
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Tên sản phẩm</strong></th>
+              <th><strong>Giá</strong></th>
+              <th><strong>Số lượng</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+        </div>
+        <div class="notify">Thanh toán thành công</div>
+        <div>
+          <button onclick="onBack()">Quay lại</button>
+          <button onclick="onCheckout()">Thanh toán</button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <div class="wrapper">
+            © 2014 - Bản quyền của Công Ty Cổ Phần Văn Hoá và Truyền Thông Nhã
+            Nam - <a href="/" style="color: #fff">nhanam.com.vn</a> <br />
+            Địa chỉ: 59 Đỗ Quang, phường Trung Hoà, quận Cầu Giấy, Hà Nội
+            <br />
+            Giấy ĐKKD số 0101603420 do Sở KH&amp;ĐT TP Hà Nội cấp ngày 21 tháng
+            1 năm 2005 sửa đổi lần 5 ngày 20/3/2013
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
