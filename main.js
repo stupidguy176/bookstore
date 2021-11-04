@@ -150,3 +150,8 @@ function onBack() {
 function onCheckout() {
   document.getElementsByClassName('notify')[0].style.visibility = 'visible';
 }
+
+function test() {
+  sessionStorage.onDelete('cart', '')
+  window.location.href = "cart.html"
+}
